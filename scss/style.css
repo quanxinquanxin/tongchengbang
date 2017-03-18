@@ -1,0 +1,171 @@
+@charset "UTF-8";
+.clear:after {
+  clear: both;
+  display: block;
+  height: 0;
+  content: "";
+  visibility: hidden; }
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; }
+
+body {
+  background-color: #fafafa; }
+
+ul {
+  margin-bottom: 0; }
+
+header {
+  width: auto;
+  height: 34px;
+  background-color: #eeeeee;
+  box-sizing: content-box;
+  border-bottom: 1px solid grey;
+  min-width: 1200px; }
+  header section {
+    line-height: 34px;
+    width: 1200px;
+    margin: auto;
+    color: #d3d3d3; }
+    header section a {
+      font-size: 12px;
+      color: grey; }
+    header section div {
+      float: left;
+      position: relative; }
+      header section div ol {
+        display: flex;
+        margin: 0; }
+        header section div ol li {
+          font-size: 12px;
+          padding: 0 5px;
+          color: grey; }
+      header section div #chaCity {
+        width: 465px;
+        position: absolute;
+        z-index: +110;
+        background-color: whitesmoke;
+        border: 1px solid lightgrey;
+        top: 25px;
+        left: 38px;
+        padding: 0 8px;
+        font-size: 12px;
+        /****************************************閫夋嫨鍩庡競***********************************************************/
+        display: none; }
+        header section div #chaCity > span {
+          float: left;
+          line-height: 25px;
+          padding-top: 10px; }
+        header section div #chaCity > button {
+          background-color: whitesmoke;
+          border: 1px solid grey;
+          margin-top: 7px;
+          float: right;
+          height: 22px;
+          width: 60px;
+          line-height: 17px; }
+        header section div #chaCity > div {
+          border: 1px solid lightgrey;
+          width: 100%;
+          margin-bottom: 5px;
+          background-color: white; }
+          header section div #chaCity > div > div:first-child {
+            width: 100%;
+            padding: 10px 0 0 10px; }
+            header section div #chaCity > div > div:first-child > span {
+              float: left; }
+          header section div #chaCity > div > div:last-child {
+            width: 100%;
+            padding: 10px 0 0 10px; }
+            header section div #chaCity > div > div:last-child > span {
+              float: left; }
+        header section div #chaCity #hotCity {
+          float: left;
+          width: 350px;
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: 20px; }
+          header section div #chaCity #hotCity span {
+            padding: 0 3px;
+            line-height: 20px; }
+        header section div #chaCity #pinYin {
+          margin-left: 10px;
+          width: 90%; }
+          header section div #chaCity #pinYin > ul {
+            padding-bottom: 4px; }
+            header section div #chaCity #pinYin > ul > li {
+              width: 17px;
+              height: 15px;
+              color: grey; }
+              header section div #chaCity #pinYin > ul > li > a {
+                padding: 0;
+                text-align: center;
+                text-transform: capitalize; }
+    header section nav {
+      float: right;
+      width: auto;
+      height: 34px;
+      background-color: transparent;
+      box-sizing: content-box;
+      overflow: hidden; }
+      header section nav ul {
+        max-width: 900px;
+        display: flex; }
+        header section nav ul li {
+          padding: 0 5px;
+          color: grey; }
+
+footer {
+  border-top: 1px solid lightgrey;
+  background-color: #fafafa;
+  margin-top: 80px;
+  padding-bottom: 30px; }
+  footer ul {
+    border-bottom: 1px solid lightgrey;
+    margin: 20px auto 20px;
+    width: 980px;
+    display: flex; }
+    footer ul li {
+      text-align: center;
+      width: 20%; }
+      footer ul li a {
+        color: grey; }
+      footer ul li div {
+        position: relative; }
+        footer ul li div span {
+          width: 43px;
+          height: 43px;
+          display: inline-block;
+          background: url("../images/index/footer.gif"); }
+        footer ul li div b {
+          position: relative;
+          top: -20px; }
+      footer ul li > a {
+        padding-left: 40px;
+        line-height: 26px;
+        display: block;
+        position: relative;
+        top: -10px; }
+    footer ul > li:nth-child(2) div span {
+      background-position: 0 -45px; }
+    footer ul > li:nth-child(3) div span {
+      background-position: 0 -88px; }
+    footer ul > li:nth-child(4) div span {
+      background-position: 0 -133px; }
+    footer ul > li:nth-child(5) div span {
+      background-position: 0 -175px; }
+  footer p {
+    margin: auto;
+    width: 980px;
+    color: grey;
+    text-align: center;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px; }
+
+/*# sourceMappingURL=style.css.map */

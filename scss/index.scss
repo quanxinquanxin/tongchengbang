@@ -1,0 +1,629 @@
+@mixin box($w:auto,$h:auto,$bgc:transparent,$bs:content-box){
+  width:$w;
+  height:$h;
+  background-color: $bgc;
+  box-sizing: $bs;
+}
+
+.amap-info-content, .amap-info-outer{
+  padding: 0;
+}
+//-----------主要----------------
+.mainContent{
+  min-width: 1200px;
+  main{
+    width: 1200px;
+    margin: auto;
+    background: #fefefe;
+    &>div:nth-child(1){
+      margin: 0;
+      img{
+        float: left;
+      }
+      nav{
+        float: right;
+        ul{
+          display: flex;
+          padding-top: 15px;
+          li{
+            padding: 10px 20px;
+          }
+          li:first-child{
+            position: relative;
+            div{
+
+              position: absolute;
+              top: -4px;
+              right: 0;
+              background-image: url("../images/index/hot.png");
+              width: 24px;
+              height: 15px;
+            }
+          }
+          &>li:hover{
+            background: red;
+          }
+        }
+      }
+    }           //logo
+    &>div:nth-child(2){
+      position: relative;
+      margin: 5px 0 0;
+      //  主图
+      .banner{
+        margin: 0;
+        width: 100%;
+        ul{
+          margin: 0;
+          li{
+            text-align: center;
+            img{
+              width: 100%;
+            }
+          }
+        }
+        .swiper-pagination{
+          text-align: right;
+          padding-right: 20px;
+          span{
+            width: 15px;
+            height: 15px;
+            background: rgba(255, 255, 255, 0.9);
+          }
+          .swiper-pagination-bullet-active{
+            background: rgba(0, 0, 0, 0.6);
+
+          }
+        }
+      }
+      //  左栏目
+      menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: +10;
+        background-color: rgba(0, 0, 0, 0.62);
+        height: 340px;
+        ol{
+          height: 100%;
+          &>li{
+            background: url("../images/index/mainSlide.png") 0 -10px  no-repeat;
+            //background: forestgreen;
+            width: 235px;
+            position: relative;
+            color: white;
+            font-size: 18px;
+            font-weight: 300;
+            &>div:first-child{
+              padding-left: 90px;
+              line-height: 85px;
+            }
+            .details{
+              position: absolute;
+              left: 235px;
+              top: 0;
+              width: 700px;
+              border: 1px solid green;
+              box-sizing: border-box;
+              background: whitesmoke;
+              color: black;
+              display: none;
+              font-size: 12px;
+              font-weight: 500;
+              ul{
+                padding: 10px 0;
+              }
+            }
+            #details0{
+              li{
+                line-height: 45px;
+                span{
+                  display: inline-block;
+                  width: 155px;
+                  text-align: right;
+                  padding-right: 10px;
+                }
+                a{
+                  color: black;
+                  display: inline-block;
+                  padding: 0 10px;
+                }
+              }
+            }
+            #details1{
+              top:-86px;
+              &>div{
+                margin: 8px 0 ;
+                div:first-child{
+                  width: 100px;
+                  float: left;
+                  line-height: 50px;
+                  text-indent: 3em;
+                  margin-top: 10px;
+                }
+                div:last-child{
+                  float: left;;
+                  width: 550px;
+                  margin-top: 10px;
+                  span{
+                    border: 1px solid lightgrey;
+                    padding: 10px 0;
+                    box-sizing: border-box;
+                    display: inline-block;
+                    width: 120px;
+                    text-align: center;
+                    margin:0 8px 20px ;
+                    line-height: 20px;
+                  }
+                  span:hover{
+                    border: 1px green solid;
+                  }
+                }
+              }
+
+            }
+            #details2{
+              top:-172px;
+              padding-top: 10px;
+              span{
+                border: 1px solid lightgrey;
+                padding: 10px 0;
+                box-sizing: border-box;
+                display: inline-block;
+                width: 120px;
+                text-align: center;
+                margin:0 8px 20px ;
+                line-height: 20px;
+              }
+              span:hover{
+                border: 1px green solid;
+              }
+            }
+            #details3{
+              top: -258px;
+            }
+            hr{
+              margin: 0;
+              border-width: 1px 0 0 0;
+            }
+          }
+          &>li:nth-child(2){
+            background: url("../images/index/mainSlide.png") 0 -110px no-repeat;
+          }
+          &>li:nth-child(3){
+            background: url("../images/index/mainSlide.png") 0 -210px no-repeat;
+          }
+          &>li:nth-child(4){
+            background: url("../images/index/mainSlide.png") 0 -310px no-repeat;
+          }
+          &>li:hover{
+            cursor: pointer;
+            background-color: forestgreen;
+            &>.details{
+              display: block;
+            }
+          }
+        }
+      }
+      //  半张图
+      &>ul{
+        background: #f5f5f5;
+        li{
+          float: left;
+          cursor: pointer;
+          margin-left: 1px;
+        }
+      }
+    }                               //banner
+    &>div {
+      margin-top: 18px;
+      &>h3 {
+        line-height: 50px;
+        height: 50px;
+        overflow: hidden;
+        font-size: 22px;
+        margin: 0;
+        span {
+          font-size: 14px;
+          line-height: 50px;
+          float: right;
+          padding-right: 20px;
+          padding-top: 5px;
+        }
+      }
+    }
+    &>div:nth-child(3){
+      .row{
+        width: 100%;
+        margin: auto;
+        &>div{
+          text-align: center;
+          border: 1px solid #f5f5f5;
+          border-width: 1px 1px 1px 0;
+          height: 290px;
+          a{
+            text-decoration: none;
+            figure{
+              height: 100%;
+              overflow: hidden;
+              padding-top: 10px;
+              img{
+                margin: 30px 0 20px;
+                width: 50%;
+                height: 65%;
+              }
+            }
+          }
+        }
+        &>div:first-child{
+          background-image: url('../images/index/remen.png');
+          background-size: cover;
+        }
+      }
+    }
+    &>div:nth-child(4){
+      .row{
+        width: 100%;
+        margin: auto;
+        &>div{
+          text-align: center;
+          border: 1px solid #f5f5f5;
+          border-width: 1px 1px 1px 0;
+          height: 290px;
+          a{
+            text-decoration: none;
+            figure{
+              height: 100%;
+              overflow: hidden;
+              padding-top: 10px;
+              img{
+                margin: 30px 0 20px;
+                width: 100%;
+                height: 65%;
+              }
+            }
+            span{
+              color: orange;
+            }
+            &:hover{
+              figcaption{
+                text-decoration-line: underline;
+              }
+            }
+          }
+        }
+        &>div:first-child{
+          background-image: url('../images/index/zhimai.png');
+          background-size: cover;
+        }
+      }
+    }
+    &>div:nth-child(5){
+      &>form{
+        margin-bottom: 10px;
+        select{
+          @include box($w:138px,$h:40px);
+          border: 1px solid forestgreen;
+          margin-right: 10px;
+        }
+        input{
+          @include box($w:468px,$h:40px);
+          border: 1px solid forestgreen;
+          text-indent: 2em;
+          outline: none;
+        }
+        button{
+          @include box($w:118px,$h:40px,$bgc:forestgreen);
+          display: inline-block;
+          border: 1px solid forestgreen;
+          margin-left: -5px;
+        }
+      }
+      .ajaxLeft{
+        width: 890px;
+        float: left;
+        nav{
+          ul{
+            border-radius: 0;
+            border: 1px solid grey;
+            height: 44px;
+            box-sizing: border-box;
+            background: #efefef;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            li{
+              line-height: 44px;
+              text-align: center;
+              width: 120px;
+              input{
+                position: relative;
+                top: 2px;
+              }
+              label{
+                font-weight: 400;
+              }
+            }
+            &>li:last-child{
+              position: absolute;
+              top: 0;
+              right: 0;
+              span{
+                cursor: pointer;
+                border: 1px solid grey;
+                padding: 5px 10px 5px 30px;
+                background-color: white;
+                background-image: url("../images/index/position.jpg")  ;
+                background-repeat: no-repeat;
+                background-position: 10px center;
+              }
+            }
+            &>li:hover>div{
+              cursor: pointer;
+              box-sizing: border-box;
+              background-color: white;
+              border-left: 1px solid grey;
+              border-right: 1px solid grey;
+            }
+            &>li:first-child:hover>div {
+              border-left: none;
+            }
+          }
+        }
+        //---------主要信息-------------
+        &>ul{
+          margin-top: 20px;
+          li{
+            padding: 10px 0 0;
+            &>div{
+              position: relative;
+              padding-top: 10px;
+              &>img{
+                width: 90px;
+                margin-right: 10px;
+                float: left;
+              }
+              .mainInfo{
+                float: left;
+                @include box($w:385px,$h:95px);
+                //-------------第一行-----------
+                &>p:first-child{
+                  margin-bottom: 20px;
+                  span{
+                    width: 160px;
+                    display: inline-block;
+                    //background-color: yellow;
+                  }
+                  b{
+                    display: inline-block;
+                    line-height: 20px;
+                    @include box($w:20px,$h:20px);
+                    background-image: url("../images/index/level.png");
+                    background-repeat: no-repeat;
+                    background-position: center 0;
+                    position: relative;
+                    top: 5px;
+                    left: 1px;
+                  }
+                }
+                p{
+                  width: 385px;
+                  overflow: hidden;
+                  white-space:nowrap;
+                  text-overflow: ellipsis;
+                  line-height: 20px;
+                  span{
+                    color: forestgreen;
+                  }
+                }
+              }
+              .slideInfo{
+                float: left;
+                margin-left: 50px;
+              }
+              button{
+                position: absolute;
+                right: 5px;
+                top: 25px;
+                width: 140px;
+                line-height: 40px;
+                box-sizing: border-box;
+                border: 1px solid forestgreen;
+                background-color: white;
+                //display: none;
+                cursor: pointer;
+              }
+            }
+          }
+          &>li:hover{
+            background-color: #F5F5F5;
+            button{
+              display: block;
+
+            }
+          }
+          hr{
+            margin: 10px 0 0;
+          }
+        }
+      }
+      .ajaxRight{
+        float: right;
+        border: 1px solid lightgrey;
+        border-bottom: none;
+        @include box($w:270px);
+        h3{
+          line-height: 42px;
+          height: 42px;
+          background-color: #efefef;
+          text-align: center;
+          font-size: 20px;
+          border-bottom: 1px solid lightgrey;
+        }
+        ul{
+          margin-bottom: 0;
+          li{
+            border-bottom:  1px solid lightgrey;
+            span{
+              display: block;
+              @include box($w:20px,$h:20px);
+              margin: 35px 15px 0;
+              border: 2px solid darkorange;
+              border-radius: 111111px;
+              text-align: center;
+              line-height: 20px;
+              font-size: 16px;
+              color: darkorange;
+              float: left;
+            }
+            img{
+              display: block;
+              margin: 21px 0;
+              float: left;
+              @include box($w:50px,$h:50px)
+            }
+            div{
+              float: left;
+              margin: 20px 0 0 5px;
+              p:first-child{
+                max-width: 150px;
+                text-wrap: none;
+                overflow: hidden;
+                a{
+                  color: green;
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//-----------页码-------------------
+#page{
+  margin: 20px auto ;
+  width: 100%;
+  padding: 0 10px;
+  min-width: 720px;
+  display: flex;
+  justify-content: space-between;
+  &>span,&>button{
+    background-color: white;
+    box-sizing: border-box;
+    color: #aaaaaa;
+    display: block;
+    width: 45px;
+    font-size: 17px;
+    line-height: 43px;
+    text-align: center;
+    border: 1px solid lightgrey;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  &>button,&>button{
+    width: 100px;
+    height: 45px;
+  }
+  &>span:first-child,&>span:last-child{
+    width: 60px;
+  }
+  &>span:hover,&>button:hover{
+    background-color: darkorange;
+    color: whitesmoke;
+    border: solid 1px darkorange;
+    font-size: 16px;
+  }
+}
+
+
+//--------------以下--------map--------fixed----------------
+#matte{
+  @include box($w:100%,$h:100%);
+  background-color: rgba(0, 0, 0, 0.56);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: +998;
+  display: none;
+}
+#map{
+  display: none;
+  @include box($w:900px,$h:550px);
+  position: absolute;
+  left: 50%;
+  margin-left: -450px;
+  top: 1350px;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+  z-index: +999;
+  h5{
+    color: grey;
+    padding: 0 10px;
+    border-bottom: 1px solid lightgrey;
+    height: 24px;
+    margin: 8px 0 0;
+    background:linear-gradient(whitesmoke,#eeeeee);
+    b{
+      float: left;
+    }
+    span{
+      color: lightgrey;
+      font-size: 28px;
+      line-height: 10px;
+      float: right;
+      cursor: pointer;
+    }
+  }
+  .page{
+    @extend #page;
+    margin-top: 5px;
+  }
+}
+//-----------------以下是------地图弹出的样式----------------
+.pop1-window {
+  width: 350px;
+  height: 170px;
+  & > h3 {
+    margin: 0 0 20px;
+    text-indent: 1em;
+    padding: 0 0 0 5px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: +10;
+    line-height: 36px;
+    height: 36px;
+    border-bottom: 1px solid grey;
+    background-color: #eeeeee;
+    font-size: 14px;
+    & > a {
+      float: right;
+      padding-right: 10px;
+    }
+  }
+  & > p {
+    font-size: 12px;
+    margin: auto;
+    height: 24px;
+    width: 310px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 20px;
+  }
+  & > a {
+    display: inline-block;
+    padding-left: 2em;
+    margin-top: 10px;
+    b {
+      background: url(../images/shopInfo/iconlist.png) no-repeat 0 -108px;
+      width: 24px;
+      height: 24px;
+      display: block;
+      float: left;
+    }
+  }
+}

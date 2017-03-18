@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header > section {
+  width: 960px; }
+
+body > section {
+  margin: auto;
+  width: 960px; }
+
+body > section:nth-child(2) {
+  margin-top: 18px;
+  clear: both;
+  padding-bottom: 17px; }
+
+body > section:nth-child(2) > img {
+  float: left; }
+
+body > section:nth-child(2) > form {
+  float: right;
+  width: 659px; }
+
+body > section:nth-child(2) > form nav {
+  clear: both;
+  height: 20px;
+  line-height: 18px; }
+
+body > section:nth-child(2) > form nav ul {
+  clear: both;
+  margin-top: -3px; }
+
+body > section:nth-child(2) > form nav li {
+  float: left;
+  margin: 0 13px 0 0; }
+
+body > section:nth-child(2) > form nav a {
+  padding: 2px 8px;
+  display: block;
+  background: transparent;
+  border-radius: 3px;
+  font-size: 12px;
+  color: black; }
+
+body > section:nth-child(2) > form nav li:first-child > a {
+  padding-right: 10px;
+  display: block; }
+
+body > section:nth-child(2) > form nav a:hover {
+  background: lightgreen;
+  color: white;
+  text-decoration: none; }
+
+body > section:nth-child(2) > form > div {
+  margin: 6px 0 0 0;
+  position: relative; }
+
+body > section:nth-child(2) > form input {
+  width: 493px;
+  border: 2px solid green;
+  height: 37px;
+  display: block;
+  text-indent: 2em;
+  float: left;
+  margin-left: 2px; }
+
+body > section:nth-child(2) > form button {
+  width: 72px;
+  display: block;
+  float: left;
+  height: 37px;
+  background: green;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border: none; }
+
+.assist {
+  position: absolute;
+  top: 36px;
+  left: 1px;
+  width: 490px;
+  border: 1px solid green;
+  background: lightcoral;
+  display: none;
+  z-index: +10; }
+  .assist ul {
+    line-height: 32px;
+    font-size: 20px;
+    background: white;
+    cursor: pointer; }
+    .assist ul li:nth-child(odd) {
+      background: #f0f2f8; }
+    .assist ul li:hover {
+      background: #caedf5; }
+    .assist ul b {
+      border-radius: 3px;
+      background: lightgrey;
+      margin: 0 5px;
+      padding: 0 5px; }
+    .assist ul li:nth-child(1) > b, .assist ul li:nth-child(2) > b, .assist ul li:nth-child(3) > b {
+      background: orange;
+      color: white; }
+
+#heng {
+  height: 3px;
+  background: green;
+  border: none;
+  margin: 0; }
+
+.mainSection {
+  background: linear-gradient(#f1f6fa, #fdfdfe);
+  margin: 10px auto 0; }
+
+.mainSection > div:first-child {
+  border: 1px solid lightgrey;
+  padding: 20px; }
+  .mainSection > div:first-child > img {
+    padding: 4px;
+    display: block;
+    float: left;
+    margin: 2px 27px 2px 2px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid lightgrey; }
+  .mainSection > div:first-child section:nth-child(2) {
+    width: 510px;
+    font-size: 12px;
+    float: left; }
+    .mainSection > div:first-child section:nth-child(2) > p {
+      margin-top: -2px;
+      line-height: 28px;
+      margin-bottom: 0; }
+      .mainSection > div:first-child section:nth-child(2) > p b {
+        font-size: 16px; }
+      .mainSection > div:first-child section:nth-child(2) > p img {
+        height: 18px;
+        margin: -3px 0 0 0;
+        padding: 0; }
+      .mainSection > div:first-child section:nth-child(2) > p button {
+        border: none;
+        display: inline-block;
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+        width: 16px;
+        height: 16px;
+        background: url("../images/shopInfo/yan.jpg") no-repeat; }
+    .mainSection > div:first-child section:nth-child(2) > div {
+      line-height: 28px; }
+      .mainSection > div:first-child section:nth-child(2) > div div > * {
+        margin: 0; }
+      .mainSection > div:first-child section:nth-child(2) > div ul {
+        margin-top: 6px; }
+        .mainSection > div:first-child section:nth-child(2) > div ul li {
+          padding-left: 30px;
+          color: grey;
+          float: left;
+          margin-right: 10px; }
+        .mainSection > div:first-child section:nth-child(2) > div ul li:nth-child(1) {
+          background: url("../images/shopInfo/bao.jpg") no-repeat 0 center;
+          padding-left: 22px; }
+        .mainSection > div:first-child section:nth-child(2) > div ul li:nth-child(2) {
+          background: url("../images/shopInfo/tui.jpg") no-repeat 5px center; }
+        .mainSection > div:first-child section:nth-child(2) > div ul li:nth-child(3) {
+          background: url("../images/shopInfo/xian.jpg") no-repeat 5px center; }
+      .mainSection > div:first-child section:nth-child(2) > div p:nth-child(2) {
+        max-width: 510px;
+        margin-bottom: 0; }
+        .mainSection > div:first-child section:nth-child(2) > div p:nth-child(2) span {
+          display: inline-block; }
+        .mainSection > div:first-child section:nth-child(2) > div p:nth-child(2) span:nth-child(2) {
+          margin-right: 5px; }
+        .mainSection > div:first-child section:nth-child(2) > div p:nth-child(2) span:nth-child(4) {
+          color: peru; }
+      .mainSection > div:first-child section:nth-child(2) > div p:nth-child(3) {
+        margin-bottom: 0;
+        max-width: 510px; }
+  .mainSection > div:first-child section:nth-child(3) {
+    width: 248px;
+    font-size: 12px;
+    float: right; }
+    .mainSection > div:first-child section:nth-child(3) div {
+      float: right; }
+      .mainSection > div:first-child section:nth-child(3) div ul {
+        margin-bottom: 13px;
+        margin-top: 2px; }
+        .mainSection > div:first-child section:nth-child(3) div ul li {
+          line-height: 24px;
+          padding-left: 30px;
+          color: grey;
+          float: left;
+          margin-left: 10px; }
+        .mainSection > div:first-child section:nth-child(3) div ul li:nth-child(1) {
+          background: url("../images/shopInfo/fen.jpg") no-repeat 5px center; }
+        .mainSection > div:first-child section:nth-child(3) div ul li:nth-child(2) {
+          background: url("../images/shopInfo/fa.jpg") no-repeat 5px center; }
+        .mainSection > div:first-child section:nth-child(3) div ul li:nth-child(3) {
+          background: url("../images/shopInfo/ju.jpg") no-repeat 5px center; }
+    .mainSection > div:first-child section:nth-child(3) p {
+      max-width: 250px;
+      max-height: 1em; }
+    .mainSection > div:first-child section:nth-child(3) p:nth-child(2) {
+      line-height: 16px;
+      float: right; }
+      .mainSection > div:first-child section:nth-child(3) p:nth-child(2) b {
+        display: inline-block;
+        background-image: url("../images/index/level.png");
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 16px; }
+    .mainSection > div:first-child section:nth-child(3) p:nth-child(3) {
+      float: right;
+      line-height: 28px; }
+      .mainSection > div:first-child section:nth-child(3) p:nth-child(3) b:nth-child(2), .mainSection > div:first-child section:nth-child(3) p:nth-child(3) b:nth-child(4) {
+        color: green; }
+    .mainSection > div:first-child section:nth-child(3) p:nth-child(4) {
+      line-height: 41px;
+      float: right; }
+      .mainSection > div:first-child section:nth-child(3) p:nth-child(4) span:nth-child(2) {
+        padding: 0 10px 0 5px; }
+
+.mainSection > div:last-child {
+  border: 1px solid lightgrey;
+  height: 36px;
+  font-size: 12px;
+  margin-top: 10px;
+  background: url("../images/shopInfo/gong.jpg") no-repeat 20px center;
+  line-height: 36px;
+  position: relative; }
+  .mainSection > div:last-child b {
+    top: 0;
+    left: 45px;
+    position: absolute; }
+  .mainSection > div:last-child ol {
+    position: absolute;
+    left: 135px;
+    top: 0;
+    width: 660px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -13px; }
+    .mainSection > div:last-child ol li {
+      float: left;
+      list-style-type: decimal; }
+      .mainSection > div:last-child ol li span {
+        color: red; }
+
+body > section:nth-child(5) {
+  background: white; }
+  body > section:nth-child(5) > section:first-child {
+    float: left;
+    width: 760px; }
+    body > section:nth-child(5) > section:first-child nav {
+      margin-bottom: 10px; }
+      body > section:nth-child(5) > section:first-child nav ul {
+        border-bottom: 1px solid lightgrey;
+        box-shadow: 0 2px 2px lightgrey;
+        padding-left: 5px; }
+        body > section:nth-child(5) > section:first-child nav ul li {
+          line-height: 40px;
+          padding: 0 10px;
+          margin: 0 13px 0 0;
+          float: left; }
+          body > section:nth-child(5) > section:first-child nav ul li > div {
+            position: relative;
+            cursor: pointer; }
+            body > section:nth-child(5) > section:first-child nav ul li > div b {
+              font-size: 14px;
+              display: block;
+              padding: 0 10px; }
+            body > section:nth-child(5) > section:first-child nav ul li > div p {
+              width: 100%;
+              height: 4px;
+              background: green;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              margin-bottom: 0;
+              display: none; }
+          body > section:nth-child(5) > section:first-child nav ul li > div:hover {
+            color: green; }
+            body > section:nth-child(5) > section:first-child nav ul li > div:hover p {
+              display: block; }
+        body > section:nth-child(5) > section:first-child nav ul li:last-child div {
+          background: url("../images/shopInfo/lettelSearch.png") no-repeat;
+          width: 211px;
+          height: 22px;
+          overflow: hidden;
+          margin-top: 10px; }
+          body > section:nth-child(5) > section:first-child nav ul li:last-child div input {
+            width: 200px;
+            height: 24px;
+            outline: none;
+            line-height: 22px;
+            border: none;
+            text-indent: 2em;
+            display: block;
+            background: transparent; }
+    body > section:nth-child(5) > section:first-child > ul > li:first-child menu ul {
+      background: #F8FFF3;
+      border: 1px solid lightgrey; }
+      body > section:nth-child(5) > section:first-child > ul > li:first-child menu ul > li {
+        line-height: 38px;
+        float: left;
+        padding: 0 10px;
+        margin: 0 5px; }
+        body > section:nth-child(5) > section:first-child > ul > li:first-child menu ul > li a {
+          font-size: 12px; }
+    body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul {
+      margin-top: 1px; }
+      body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li {
+        font-size: 12px;
+        padding: 12px  10px 10px 10px;
+        border-bottom: 1px solid lightgrey;
+        height: 95px; }
+        body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li > img {
+          width: 70px;
+          height: 70px;
+          display: block;
+          margin-right: 15px;
+          float: left; }
+        body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li > div {
+          width: 655px;
+          float: left;
+          display: block; }
+          body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li > div > a {
+            float: left;
+            font-size: 14px;
+            height: 14px; }
+            body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li > div > a span {
+              color: red; }
+          body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li > div > p {
+            width: 420px;
+            line-height: 20px;
+            float: left;
+            margin: 0;
+            position: relative;
+            top: 5px;
+            height: 42px;
+            overflow: hidden;
+            color: grey; }
+          body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li > div > div {
+            float: right;
+            width: 220px;
+            position: relative; }
+            body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li > div > div p {
+              position: absolute;
+              top: 5px;
+              left: 0;
+              font-size: 16px;
+              color: grey; }
+              body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li > div > div p b {
+                margin-left: 5px;
+                color: orangered; }
+            body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li > div > div button {
+              position: absolute;
+              right: 0;
+              top: 0;
+              background: url("../images/shopInfo/li.jpg");
+              height: 31px;
+              border: none;
+              border-radius: 3px;
+              width: 95px;
+              margin-right: 5px;
+              margin-top: 2px; }
+      body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > ul li:hover {
+        background: rgba(255, 243, 208, 0.85); }
+    body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > section {
+      display: flex;
+      background: orchid;
+      justify-content: center; }
+      body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > section .pagination {
+        margin: 5px auto 15px; }
+        body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > section .pagination li a {
+          border-radius: 3px;
+          margin: 0 2px;
+          height: 26px;
+          line-height: 26px;
+          padding: 0 10px;
+          cursor: pointer; }
+        body > section:nth-child(5) > section:first-child > ul > li:nth-child(2) > section .pagination li:hover a {
+          background: #337ab7; }
+    body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section {
+      border: 1px solid lightgrey; }
+      body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section h6 {
+        border-bottom: 1px solid lightgrey;
+        line-height: 34px;
+        margin: 0;
+        text-indent: 1.5em;
+        background: #f5f5f5; }
+      body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul li {
+        border-bottom: 1px dashed lightgrey; }
+        body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul li img {
+          display: block;
+          float: left;
+          margin: 15px 0 10px 39px;
+          width: 32px; }
+        body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul li div {
+          width: 648px;
+          float: right;
+          margin-top: 10px;
+          font-size: 12px; }
+          body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul li div p:nth-child(1) {
+            padding-left: 2px;
+            color: red; }
+            body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul li div p:nth-child(1) b {
+              display: inline-block;
+              width: 16px;
+              height: 14px;
+              background: url("../images/index/level.png") no-repeat center -2px; }
+            body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul li div p:nth-child(1) span {
+              float: right;
+              color: lightgrey;
+              padding-right: 5px; }
+          body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul li div p:nth-child(2) {
+            margin-top: 17px; }
+          body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul li div p:nth-child(3) {
+            letter-spacing: 0.5px;
+            margin-top: 3px;
+            color: grey; }
+      body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul > li:last-child {
+        border-bottom: none; }
+        body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul > li:last-child > section {
+          clear: both;
+          display: flex;
+          background: orchid;
+          justify-content: center; }
+          body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul > li:last-child > section .pagination {
+            margin: 5px auto 15px; }
+            body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul > li:last-child > section .pagination li a {
+              border-radius: 3px;
+              margin: 0 2px;
+              height: 26px;
+              line-height: 26px;
+              padding: 0 10px;
+              cursor: pointer; }
+            body > section:nth-child(5) > section:first-child > ul > li:nth-child(3) section ul > li:last-child > section .pagination li:hover a {
+              background: #337ab7; }
+  body > section:nth-child(5) > section:last-child {
+    float: right;
+    text-align: center; }
+    body > section:nth-child(5) > section:last-child div {
+      margin-bottom: 20px; }
+      body > section:nth-child(5) > section:last-child div p {
+        margin-top: 3px; }
+      body > section:nth-child(5) > section:last-child div a {
+        display: block; }
+
+/*# sourceMappingURL=shopInfo.css.map */
