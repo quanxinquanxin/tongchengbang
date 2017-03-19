@@ -1,0 +1,52 @@
+body {
+  width: 100%;
+  background: white; }
+
+.banner {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  top: -1px; }
+  .banner > div {
+    height: 420px;
+    background-image: url("../images/repair/banner2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+    .banner > div > div {
+      height: 420px;
+      width: 1200px;
+      background-image: url("../images/repair/banner2.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      margin: auto; }
+
+footer {
+  margin-top: 20px;
+  padding: 0; }
+  footer div:first-child {
+    background: #494e51;
+    padding: 10px 0 8px; }
+    footer div:first-child ul {
+      margin: 0 auto;
+      border: none; }
+      footer div:first-child ul div {
+        padding-bottom: 0; }
+        footer div:first-child ul div > a {
+          font-size: 12px; }
+  footer div:last-child {
+    padding: 20px auto;
+    background: #242c31; }
+    footer div:last-child a {
+      color: white; }
+    footer div:last-child p:first-child {
+      padding-top: 35px;
+      letter-spacing: 1px; }
+    footer div:last-child p:last-child {
+      padding-bottom: 58px; }

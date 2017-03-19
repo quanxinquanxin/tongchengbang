@@ -27,8 +27,8 @@ ul{
 }
 
 header{
-    @include box($h:34px,$bgc:#eeeeee);
-    border-bottom: 1px solid grey;
+    @include box($h:32px,$bgc:#eeeeee);
+    border-bottom: 1px solid #d3d3d3;
     min-width: 1200px;
     section{
         line-height: 34px;
@@ -137,7 +137,7 @@ header{
             @include box($h:34px);
             overflow: hidden;
             ul{
-                max-width: 900px;
+                max-width: 880px;
                 display: flex;
                 li{
                     padding: 0 5px;
@@ -174,7 +174,7 @@ footer{
                     width: 43px;
                     height: 43px;
                     display: inline-block;
-                    background: url("../images/index/footer.gif");
+                    background: url("../images/index/footer.png");
                 }
                 b{
                     position: relative;

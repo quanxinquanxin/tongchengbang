@@ -146,7 +146,7 @@ $(function () {
                         str += "<b title='等级:"+level+ "' style='background-position: center -78px'></b>";
                     }
                 };
-                $(levelP).html("<span>" + $(shopData).eq(index)[0]["shop_name"]+"</span>店铺名字"+str)
+                $(levelP).html("<span>" + $(shopData).eq(index)[0]["shop_name"]+"</span>店铺等级"+str)
 
             }
 
